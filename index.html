@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
-    /*****PROJECTS SECTION*****/
+    /*****Technichal Skills *****/
 * {
     margin: 0;
     padding: 0;
@@ -138,6 +138,138 @@
     .container-2 .card .content-2 a {
         font-size: 0.9rem;
     }
+}
+    /*****Projects section *****/
+    .cards1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container-1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.container-1 .card1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: #ffbf35;
+    border-radius: 20px;
+   
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.container-1 .card1:hover {
+    height: 400px;
+}
+
+.container-1 .card1 .img-box1 {
+    position: absolute;
+    align-content: center;
+    top: 20px;
+    width: 150px;
+    height: 150px;
+    
+    border-radius: 12px;
+    overflow: hidden;
+    
+}
+
+.container-1 .card1:hover .img-box1 {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.container-1 .card1 .img-box1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-1 .card1 .content-1 {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.container-1 .card1:hover .content-1 {
+    top: 130px;
+    height: 250px;
+}
+
+.container-1 .card1 .content-1 h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.container-1 .card1 .content-1 p {
+    color: #333;
+}
+
+.container-1 .card1 .content-1 a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: #ffbf35;
+    font-weight: 500;
+}
+
+.container-1 .card1 .content-1 a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .container-1 .card1 {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .container-1 .card1 .img-box1 {
+        display: flex;
+        align-content: center;
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .container-1 .card1 .content-1 p {
+        font-size: 0.8rem;
+    }
+
+    .container-1 .card1 .content-1 a {
+        font-size: 0.9rem;
+    }
+
+
+
+
+
+
+
+
     /*****BODY BG COLOR*****/
     }
         html, body {
@@ -149,6 +281,7 @@
             padding: 0;
         }
         /*****NAV TEXT LOGO*****/
+
         .logo {
             font-size: 40px;
             font-weight: 600;
@@ -158,6 +291,31 @@
             color: #ffbf35;
         }
             /*****NAV SECTION*****/
+            @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Hide the navigation links by default on mobile */
+            }
+
+            .nav-links.active {
+                display: flex; /* Show the navigation links when active class is present */
+                flex-direction: column; /* Align links vertically */
+                background-color: #f9f9f9; /* Adjust background color as needed */
+                position: absolute;
+                top: 80px; /* Adjust top position as needed */
+                left: 0;
+                width: 100%;
+                padding: 20px;
+            }
+
+            .nav-links.active a {
+                margin-top: 10px; /* Add some margin between navigation links */
+            }
+
+            .hamburger-menu {
+                display: block; /* Show hamburger menu icon */
+            }
+        }
+
         nav a {
             text-decoration: none;
             font-size: 16px;
@@ -356,24 +514,38 @@ table td {
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4 logo">
-                Port<span class="span-col">folio</span>
-            </div>
-            <div class="col-md-8">
-                <nav style="margin-top: 20px;">
-                    <a href="#"><span class="span-col">Home</span></a>
-                    <a href="#Aboutme">About me</a>
-                    <a href="#Education">Education</a>
-                    <a href="#Experience">Experience</a>
-                    <a href="#Projects">Projects</a>
-                    <a href="cv example.pdf" download target="_blank">My CV</a> 
-
-                </nav>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" style="color: #ffbf35;">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Aboutme">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cv example.pdf" download target="_blank">My CV</a>
+                         
+                    </li>
+                </ul>
             </div>
         </div>
-    </div>
+    </nav>
 
     <div class="banner-section">
         <img src="0.jpg" alt="Banner Image" style="max-width: 100%;">
@@ -389,12 +561,11 @@ table td {
         </div>
     </div>
     <!------ABOUT ME SECTION------>
+    <h2 id="Aboutme" class="heading-text"> About Me</h2>
 <div class="main-section bg-lightgrey">
   <div class="container">
-    
     <div class="width-50">
       <div class="about-us">
-        <h2 id="Aboutme" class="heading-text"> About Me</h2>
         <h3 style="color: #ffbf35;">Welcome to my portfolio! </h3>
         <p> Hey there! I'm Abdullah Dabash, a 25-year-old industrial product design graduate turned passionate web developer.</p>
              <p></p>With a knack for blending creativity with functionality,
@@ -403,107 +574,67 @@ table td {
              <p></p>Experienced in Node.js, Express, MongoDB.
              <p></p>Familiar with React, WordPress, and responsive design principles.
              <p></p>Let's create something amazing together!
-        <div class="width-50 mt-20">
-          <table cellspacing="8" cellpadding="8">
-            <tr>
-              <th>Name: </th>
-              <td>Abdullah dabash</td>
-            </tr>
-            <tr>
-              <th>Email:</th>
-              <td> Abdullah.dabash99@gmail.com</td>
-            </tr>
-            <tr>
-              <th>Birthday:</th>
-              <td> 16 Aug, 1999</td>
-            </tr>
-            <tr>
-              <th>Study:</th>
-              <td> LTUC Amman</td>
-            </tr>
-          </table>
-        </div>
-        <div class="width-50 mt-20">
-          <table cellspacing="8" cellpadding="8">
-            <tr>
-              <th>Phone:</th>
-              <td>(+962) 792875075</td>
-            </tr>
-            <tr>
-              <th>City:</th>
-              <td>Amman, Jordan</td>
-            </tr>
-          </table>
-        </div>
+             <p></p><p style="color: #ffbf35; font-size: x-large;"><b></b>Personal Skills:</b></p>
+             <p></p><b>Time Management:</b> Demonstrates the ability to effectively manage time and prioritize tasks to meet project deadlines.
+             <p></p><b>Communication Skills:</b> Proficient in expressing technical concepts clearly and effectively to both technical and non-technical stakeholders, fostering collaboration and understanding.
+             <p></p><b>Adaptability:</b> Quickly adapts to new technologies, tools, and frameworks, staying abreast of industry trends and best practices.
+             <p></p><b>Client Management:</b> Capable of understanding and translating client requirements into technical specifications, effectively managing client expectations throughout the development process.
       </div>
     </div>
   </div>
 </div><br><br>
 <!------Experience section------>
     <div class="container "><br><br>
+        <h2 id="Experience" class="heading-text">Experience</h2>
         <div class="row">
             <div class="col-md-12">
-                <div class="edu-exp">
-                    <h2 id="Experience" class="heading-text">Experience</h2>
                     <div class="experience-list">
                         <div class="experience-content">
-                            <h2>------------</h2>
-                            <h3>------------</h3>
-                            <p>-------------</p>
+                            <h2>2019 – MAY-2024 assistant store manager igeek megastore</h2>
+                            <h3>Assistant store manager with 5 years of experience in the retail industry. Studies of Industrial Product Design. Skills in
+                                Communication skills, Technical skills, Teamwork, Time management. Hobbies in Volunteering, Sports and fitness, Creative
+                                pursuits, Travel, Reading
+                                </h3>
+                            <p> <P></P>Hired and trained new sales associates
+                                <P></P>Conducted performance reviews
+                                <P></P> Created staff schedules
+                                <P></P> Analyzed sales data to create marketing and sales strategies
+                                <P></P> Stocked shelves and organized inventory
+                                <P></P> Helped customers with questions and concerns
+                                <P></P> Delegated tasks to staff members
+                                <P></P>  Kept store clean and organized
+                                </p>
                         </div>
                     </div>
-                    <div class="experience-list">
-                        <div class="experience-content">
-                            <h2>-------------</h2>
-                            <h3>-------------</h3>
-                            <p>----------------------</p>
-                        </div>
-                    </div>
-                    <div class="experience-list">
-                        <div class="experience-content">
-                            <h2>-------------</h2>
-                            <h3>-------------</h3>
-                            <p>-------------</p>
-                        </div>
-                    </div>
-                    <div class="experience-list">
-                        <div class="experience-content">
-                            <h2>-------------</h2>
-                            <h3>-------------</h3>
-                            <p>-------------</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
     </div>
     <!------Education section------>
     <div id="2" class="container">
+        <h2 id="Education" class="heading-text">Education</h2>
       <div class="row">
           <div class="col-md-12">
               <div class="edu-exp">
-                  <h2 id="Education" class="heading-text">Education</h2>
                   <div class="experience-list">
                       <div class="experience-content">
-                          <h2>-------------</h2>
-                          <h3>-------------</h3>
-                          <p>-------------</p>
-                      </div>
-                  </div>
-                  <div class="experience-list">
-                      <div class="experience-content">
-                          <h2>-------------</h2>
-                          <h3>-------------</h3>
-                          <p>-------------</p>
+                          <h2>2020 – JUNE-2023 Industrial Product Design luminus technichal
+                            Universty</h2>
+                          <h3>Worked on projects that spanned multiple design disciplines including mechanical, electrical,
+                            and software engineering<P></P>
+                            <P></P>Conducted user research to better understand customer needs and pain points
+                            <P></P> Identified user requirements and created concept designs to address those needs
+                            <P></P> Prototyped and tested designs to ensure they met user requirements
+                            </h3>
                       </div>
                   </div>
               </div>
           </div>
       </div>
   </div><br><br>
-<!------Projects section------>
-  <h1 id="Projects" style="display: flex; justify-content: center; color: #ffbf35; padding-top: 30px;"><p>Projects</p></h1>
-
+<!------Technichal Skills section------>
+  <h1 id="Projects" style="display: flex; justify-content: center; color: #ffbf35; padding-top: 30px;"><p>Technichal Skills :</p></h1>
 <section class="cards">
   <div class="container-2">
     <div class="card" style="--clr: #000">
@@ -596,10 +727,83 @@ table td {
       </div>
   </div>
   </section>
+  <!------Projects SECTION------>
+  <h1 id="Projects" style="display: flex; justify-content: center; color: #ffbf35; padding-top: 30px;"><p>Projects :</p></h1>
+  <section class="cards1">
+    <div class="container-1">
+      <div class="card1" style="--clr: #000">
+          <div class="img-box1">
+              <img src="grid.png">
+          </div>
+          <div class="content-1">
+              <h2>Grid-Flex</h2>
+              <p>
+                  
+              </p>
+              <a href="https://github.com/abdullah-dabash/bootstrap-first-task.git" target="_blank">Jump in</a>
+          </div>
+      </div>
+      <div class="card1" style="--clr: #000">
+          <div class="img-box1">
+              <img src="bootstrap.png">
+          </div>
+          <div class="content-1">
+              <h2>BootStrap</h2>
+              <p>
+              </p>
+              <a href="https://github.com/abdullah-dabash/bootstrap-first-task.git" target="_blank">Jump in</a>
+          </div>
+      </div>
+      <div class="card1" style="--clr: #000">
+          <div class="img-box1">
+              <img src="nth.png">
+          </div>
+          <div class="content-1">
+              <h2>Nth-Child</h2>
+              <p>
+                  
+              </p>
+              <a href="https://github.com/abdullah-dabash/nth-child.git" target="_blank">Jump in</a>
+          </div>
+      </div>
+  </div>
+  </section>
 <!------FOOTER SECTION------>
 <div class="footer">
     <div class="container">
-      <div class="footer-sect social-icon width-50">
+        <div class="width-50 mt-20">
+            <table cellspacing="8" cellpadding="8">
+              <tr>
+                <th> Name: </th>
+                <td> Abdullah dabash</td>
+              </tr>
+              <tr>
+                <th> Email:</th>
+                <td> Abdullah.dabash99@gmail.com </td>
+              </tr>
+              <tr>
+                <th style="padding-right: 15px;">Birthday: </th>
+                <td> 16 Aug, 1999 </td>
+              </tr>
+              <tr>
+                <th> Study:</th>
+                <td> LTUC Amman</td>
+              </tr>
+            </table>
+          </div>
+          <div class="width-50 mt-20">
+            <table cellspacing="8" cellpadding="8">
+              <tr>
+                <th > Phone:</th>
+                <td > (+962) 792875075 </td>
+              </tr>
+              <tr>
+                <th> City:</th>
+                <td> Amman, Jordan </td>
+              </tr>
+            </table>
+          </div>
+      <div class="footer-sect social-icon width-50" style="padding-top: 15px;">
         <a href="https://www.facebook.com/dabashh69?mibextid=ZbWKwL " target="_blank">
           <i class="fa fa-facebook"></i>
         </a>
@@ -610,11 +814,11 @@ table td {
         </a>
         <a href="https://www.instagram.com/dabbashh/?igsh=MWo4dWtpaDdyZWUydQ%3D%3D" target="_blank">
           <i class="fa fa-instagram"></i>
-        </a>
+        </a><br><br>
+        <p style="padding-left: 15px;">CopyRight  All Rights Reserved</p>
       </div>
-      <div class="footer-sect mt-20 width-50">CopyRight  All Rights Reserved</div>
     </div>
   </div>
-
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
