@@ -16,6 +16,9 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+.navbar-dark .navbar-toggler-icon {
+            background-color: #000;
+        }
 .cards{
     display: flex;
     justify-content: center;
@@ -228,6 +231,11 @@
 }
 
 @media (max-width: 480px) {
+
+    .social-icons a {
+    font-size: 10vw !important;
+    
+}
     .container-1 .card1 {
         width: 230px;
         border-radius: 15px;
@@ -247,14 +255,6 @@
     .container-1 .card1 .content-1 a {
         font-size: 0.9rem;
     }
-
-
-
-
-
-
-
-
     /*****BODY BG COLOR*****/
     }
         html, body {
@@ -500,13 +500,13 @@ table td {
 </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg navbar-dark ">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="#" style="color: #ffbf35;">Portfolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse " id="navbarNav" style="margin-left: 500px;">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#">Home</a>
@@ -521,16 +521,14 @@ table td {
                         <a class="nav-link" href="#Experience">Experience</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#Technichal Skills">Technichal Skills</a>
+                        <a class="nav-link" href="#Technichal-Skills">Technichal Skills</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Projects">Projects</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="files/cv example.pdf" download target="_blank">My CV</a>
-                         
                     </li>
-                    
                 </ul>
             </div>
         </div>
@@ -722,8 +720,9 @@ table td {
       </div>
   </div>
   </section>
+  
   <!------Projects SECTION------>
-  <h1 id="Projects" style="display: flex; justify-content: center; color: #ffbf35; margin-top: -280px;  "><p>Projects :</p></h1>
+  <h1 id="Projects" style="display: flex; justify-content: center; color: #ffbf35; margin-top: -50px; margin-bottom: -80px; "><p>Projects :</p></h1>
   <section class="cards1" style="margin-top: 100px;">
     <div class="container-1">
       <div class="card1" style="--clr: #000">
@@ -812,10 +811,6 @@ table td {
       </div>
     </div>
   </div>
-  
-  
-  
-  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
